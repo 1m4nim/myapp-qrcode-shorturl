@@ -1,12 +1,16 @@
+// {
+//     "compilerOptions": {
+//       "target": "ESNext",
+//       "module": "ESNext",
+//       "jsx": "react-jsx",
+//       "strict": true,
+//       "esModuleInterop": true,
+//       "skipLibCheck": true,
+//       "forceConsistentCasingInFileNames": true
+//     }
+//   }
 {
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "jsx": "react-jsx",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    }
+  "compilerOptions": {
+    "jsx": "react-jsx"
   }
-  
+}
