@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import QRCode from "react-qr-code";
+import "./styles/App.css"; // スタイルシートをインポート
 
 const App: React.FC = () => {
   const [longUrl, setLongUrl] = useState("");
@@ -18,8 +19,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>URL Shortener & QR Code Generator</h2>
+    <div className="main">
+      <h2 className="shorturl-qrcode">あなたが持ってるURLを短く<br />そしてQRコードまで生成！</h2>
       <input
         type="text"
         value={longUrl}
@@ -32,7 +33,7 @@ const App: React.FC = () => {
       </button>
 
       {shortUrl && (
-        <div style={{ marginTop: "20px" }}>
+        <div className="qr-container">
           <p>Shortened URL: <a href={shortUrl} target="_blank" rel="noopener noreferrer">{shortUrl}</a></p>
           <QRCode value={shortUrl} size={150} />
         </div>
