@@ -32,6 +32,13 @@ html, body {
   margin-top: 20px;
 }
 
+.qr-container a{
+  color: black;
+}
+
+.qr-container a:hover{
+  color: yellow;
+}
 
 .button {
   padding: 8px 15px;
