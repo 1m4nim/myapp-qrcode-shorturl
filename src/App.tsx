@@ -28,7 +28,7 @@ const App: React.FC = () => {
         placeholder="Enter long URL"
         style={{ width: "300px", padding: "8px", marginRight: "10px" }}
       />
-      <button onClick={handleShorten} style={{ padding: "8px 15px", cursor: "pointer" }}>
+      <button className="button" onClick={handleShorten} >
         Shorten
       </button>
 
